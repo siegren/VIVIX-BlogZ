@@ -1,6 +1,6 @@
-# Blog (Rails Practice)
+# BlogZ
 
-This is a practice on how to create web application using Rails. This is a simple blog web application. I followed the [creating the blog guides](http://guides.rubyonrails.org/getting_started.html#creating-the-blog-application) in [guides.rubyonrails.org](http://guides.rubyonrails.org)
+BlogZ is a simple blog application. This actually a continuation of the [Blog practice](https://github.com/siegren/VIVIXX-Blog) that I have created. I added a very simple design. It's not finished yet but I'm going to continue doing this.
 
 ## Features
 ##### 1. You can add, view, and delete articles. In adding new article, you need to put the title and content of the article. It is required to put the title and the number of characters should be minimum of five (5).
@@ -13,16 +13,16 @@ Screenshots
 ![Main](images/main.png)
 
 ### Listing Article
-![Main](images/list.png)
+![Article List](images/list.png)
 
 ### New Article
-![Main](images/new.png)
+![New Article](images/new.png)
 
 ### Edit Article
-![Main](images/edit.png)
+![Edit Article](images/edit.png)
 
-### Show Artcile
-![Main](images/show.png)
+### Show Artcile and Comments
+![Show Article](images/show.png)
 
 
 
