@@ -1,0 +1,43 @@
+<div id="main">
+  <div class="show-article">
+   <%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i>'.html_safe, edit_article_path(@article), class: 'edit' %> 
+    <h1 class="text-center">
+      <%= @article.title %>
+
+    </h1>
+    <hr />
+    <p>
+      <%= @article.text %>
+    </p>
+    <div class="comments">
+    <hr />
+      <h4>Comments</h4>
+        <%= render @article.comments %>
+
+        <div class="add-comment">
+           <h3>New Comment</h3>
+
+        <%= form_for([@article, @article.comments.build]) do |f| %>
+          <p>
+            <%= f.label :name %><br>
+            <%= f.text_field :commenter, class: 'text' %>
+          </p>
+          <p>
+            <%= f.label :body %><br>
+            <%= f.text_area :body, class: 'text-area' %>
+          </p>
+          <p>
+            <%= f.submit 'Comment', class: 'btn btn-primary btn-lg button' %>
+          </p>
+        <% end %>
+        </div>
+       
+
+
+        
+        <%= link_to 'Back to List', articles_path %>
+    </div>
+
+  </div>
+ 
+</div>

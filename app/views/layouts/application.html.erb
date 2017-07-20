@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jbn</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  		
+  			<nav class="navbar navbar-default">
+				<div class="container">
+				    <div class="navbar-header">
+				    
+				    	
+				        	<%= link_to 'BlogZ', {controller: 'welcome'}, class: 'navbar-brand' %>
+				        	        	
+				   </div>
+				     				<ul class="nav navbar-nav navbar-right">
+				     					<li><%= link_to 'Home', {controller: 'welcome'} %></li>
+				     					<li><%= link_to 'Blog', {controller: 'articles'} %></li>
+				     				</ul>	       
+				       
+				        
+				        	
+				    </div>
+			    </div>
+			 </nav>
+  		
+  	    <%= yield %>
+
+  	    <div id="footer">
+  	    	<div class="container">
+  	    		<p class="text-center">&copy; 2017 by BlogZ</p>
+  	    	</div>
+  	    </div>
+  
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<div class="comment-box">
+	  <%= link_to '<i class="fa fa-trash" aria-hidden="true"></i>'.html_safe, [comment.article, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' }, class: 'del-comment' %>
+	<h2><%= comment.commenter %></h2>
+	<p><%= comment.body %></p>
+	<hr />
+</div>
